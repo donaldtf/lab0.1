@@ -1,0 +1,46 @@
+<ul class="list-group contentText tealborder">
+  <div class="list-group-item fillscreen">
+
+    <h1>Weather Forecast</h1>
+
+    <div class="row">
+      <div class="col-md-8">
+
+        <md-input-container>
+          <label>Enter city name:</label>
+          <input ng-model="defaultlocation">
+        </md-input-container>
+      </div>
+      <div class="col-md-4">
+        <md-button class="md-raised md-primary" ng-click="getWeather()">Get Forecast</md-button>
+
+
+      </div>
+    </div>
+
+  </div>
+</ul>
+
+<ul class="list-group contentText tealborder centerall" ng-show="show == true">
+  <div class="list-group-item">
+
+    <h1>Ten Day Forecast For {{defaultlocation}} </h1>
+
+    <table border="1" style="width:100%">
+      <tr>
+        <th>Temp</th>
+        <th>Picture</th>
+        <th>Condition</th>
+        <th>Chance of Percipitation</th>
+      </tr>
+      <tr ng-repeat="current in randomWeather">
+        <td class="fixtable">{{current.temp}}</td>
+        <td class="fixtable"><img ng-src="{{current.pic}}" class="myimage"></td>
+        <td class="fixtable">{{current.clouds}}</td>
+        <td class="fixtable">{{current.chanceofrain}}</td>
+      </tr>
+    </table>
+
+
+  </div>
+</ul>

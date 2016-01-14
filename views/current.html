@@ -1,0 +1,37 @@
+<ul class="list-group contentText tealborder">
+  <div class="list-group-item">
+
+    <h1>Current Weather</h1>
+
+    <div class="row">
+      <div class="col-md-8">
+
+        <md-input-container>
+          <label>Enter city name:</label>
+          <input ng-model="defaultlocation">
+        </md-input-container>
+      </div>
+      <div class="col-md-4">
+        <md-button class="md-raised md-primary" ng-click="getWeather()">Get Current Weather</md-button>
+
+
+      </div>
+    </div>
+
+  </div>
+</ul>
+
+<ul class="list-group contentText tealborder centerall" ng-show="show == true">
+  <div class="list-group-item">
+
+    <h1>{{defaultlocation}}</h1>
+
+    <img ng-src="{{current.pic}}" class="myimage">
+
+    <h2>Temp: {{current.temp}} F</h2>
+    <h2>Current Condition: {{current.clouds}}</h2>
+    <h2>Chance of Percipitation: {{current.chanceofrain}}</h2>
+
+
+  </div>
+</ul>

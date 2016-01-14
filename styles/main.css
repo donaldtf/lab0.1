@@ -1,0 +1,73 @@
+.sidenav {
+  height: 100%;
+
+}
+
+.main {
+  background-color: #9E9E9E;
+  color: white;
+}
+
+.contentText {
+  color:black;
+  font-weight: bold;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 25px;
+  list-style: none;
+}
+
+.subtitle {
+  list-style: none;
+  font-size: 20px;
+}
+
+.subsubtitle{
+  list-style:square;
+  font-size: 18px;
+}
+
+.tealborder {
+  border: 5px solid #009688;
+  list-style: none;
+}
+
+.tealbordersmall {
+  border: 1px solid #009688;
+}
+
+.myh1 {
+  font-size: 50px;
+  text-align: center;
+  border: 2px solid black;
+  background-color: #009688;
+}
+
+.left-side{
+
+}
+
+.centerall {
+  text-align: center;
+}
+
+.myimage {
+  text-align:center;
+  width: 30%;
+}
+
+.fillscreen {
+  height: 100%;
+}
+
+.fixtable {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.red {
+  color: red;
+}
